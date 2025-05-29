@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: If you use a custom font, define it globally here */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Or your custom font */
+    line-height: 1.6;
+    color: theme('colors.cjn-text-main'); /* Use the new main text color */
+    background-color: theme('colors.cjn-secondary'); /* Use the new secondary background */
+}
+
+/* Basic flex setup for React App */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
