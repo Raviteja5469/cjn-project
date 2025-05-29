@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import QRCard from '../components/QRCard';
+// import mutedVideo from 'https://youtu.be/wL-gzYgunkY'; 
 
 const Home = () => {
     const qrCardsData = [
@@ -106,14 +107,30 @@ const Home = () => {
                     <div className="relative w-full max-w-3xl mx-auto bg-gray-900 rounded-lg shadow-2xl p-6 transform rotate-1">
                         <div className="absolute inset-0 border-8 border-gray-800 rounded-lg shadow-inner"></div>
                         <div className="relative w-full h-0 pb-[56.25%]">
-                            <iframe
+                            {/* <iframe
                                 className="absolute top-0 left-0 w-full h-full rounded-md"
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                src="https://youtu.be/wL-gzYgunkY"
                                 title="CJN Intern Program Intro"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
-                            ></iframe>
+                            ></iframe> */}
+
+                            <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/LMPvtCrOvZY?autoplay=1&mute=1"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+
+
+
+                            {/* <video autoPlay muted loop>
+        <source src={mutedVideo} />
+      </video> */}
                         </div>
                         <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-cjn-text-light text-xs font-bold shadow-lg">
                             CJN
